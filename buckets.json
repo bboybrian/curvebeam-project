@@ -1,0 +1,8 @@
+[
+    {
+      "origin": ["artifacts.fluent-aileron-232404.appspot.com"],
+      "method": ["GET", "POST", "OPTIONS", "PUT", "PATCH", "DELETE"],
+      "responseHeader": ["Content-Type"],
+      "maxAgeSeconds": 3600
+    }
+]

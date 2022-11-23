@@ -28,8 +28,17 @@ p, h3 {
 }
 
 .student_count {
-    text-align: center;
+    /* text-align: center; */
     color: rgb(43, 172, 43);
+}
+
+.left_count {
+    color: gray;
+}
+
+.counts {
+    display:flex;
+    justify-content: space-evenly;
 }
 
 .Class.S0 {
@@ -41,3 +50,4 @@ p, h3 {
 .Class.S0 .row .student_count {
     color: rgb(199, 199, 199);
 }
+

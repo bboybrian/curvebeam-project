@@ -10,6 +10,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 const PORT = process.env.PORT || 8080;
+console.log("Port:",PORT);
 
 // connect to sql
 const config = {
@@ -47,8 +48,9 @@ app.set('view engine', 'ejs');
 
 // Enabled headers
 app.use(function (req, res, next) {
+  console.log(req,res);
   // Website you wish to allow to connect
-  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.setHeader('Access-Control-Allow-Origin', '*');
   // Set allowed server methods
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
   // Set access control headers
@@ -98,5 +100,6 @@ app.use(function(err, req, res, next) {
 });
 
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
+// app.listen(0.0.0.0)
 
 module.exports = app;

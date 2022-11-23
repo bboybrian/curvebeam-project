@@ -11,7 +11,7 @@ const Class = ({
 	selected,
 	setSelected,
 }) => {
-	let car_counts = [], student_count = 0;
+	let car_counts = [], student_count = 0, left_count = 0;
 	// Count the number of cars per student
 	for (let i = 0; i < students.length; i++) {
 		if (car_counts[students[i].name]) {
@@ -20,7 +20,9 @@ const Class = ({
 			car_counts[students[i].name] = 1;
 			if (!students[i].left) { // Count the number of students still in class
 				student_count++;
-			}
+			} else {
+                left_count++;
+            }
 		}
 	}
 
@@ -47,7 +49,10 @@ const Class = ({
 		<div className={"Class S" + student_count}>
 			<div className="row">
 				<h2>Class {name}</h2>
-				<h2 className={"student_count"}>{student_count}</h2>
+                <div className="counts">
+                    <h2 className={"student_count"}>{student_count}</h2>
+                    <h2 className={"left_count"}>{left_count}</h2>
+                </div>
 			</div>
 			<div className="row">
 				<h3>NAME</h3>
