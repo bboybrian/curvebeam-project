@@ -1,0 +1,14 @@
+#Edit {
+    display: flex;
+    justify-items: center;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ClassListWrapper {
+    display: inline-flex;
+    flex-direction: column;
+    width: 50%;
+}

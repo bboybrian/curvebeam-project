@@ -1,0 +1,43 @@
+h2 {
+    font-weight: 500;
+    margin: 0 0 4% 0;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+p, h3 {
+    margin: 5px 0;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 150px 70px;
+    padding: 0 5%;
+    text-align: left;
+    /* margin: 10px; */
+}
+
+.Class {
+    outline: 3px black solid;
+    padding: 3% 0;
+    background-color: #fffcf6;
+    min-width: 235px;
+    overflow: hidden;
+}
+
+.student_count {
+    text-align: center;
+    color: rgb(43, 172, 43);
+}
+
+.Class.S0 {
+    color: rgb(199, 199, 199);
+    background-color: transparent;
+    outline: 3px rgb(199, 199, 199) solid;
+}
+
+.Class.S0 .row .student_count {
+    color: rgb(199, 199, 199);
+}

@@ -1,0 +1,48 @@
+#Home {
+    display: grid;
+    grid-template-rows: 10fr 1fr 1fr 4fr;
+    justify-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.ClassWrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: flex-start;
+    translate: 0 8em;
+    height: fit-content;
+}
+
+.ClassWrapper>* {
+    margin: 30px 30px;
+}
+
+.Search {
+    padding: 0 2%;
+    font-size: large;
+    text-transform: uppercase;
+    max-height: 2.5em;
+    width: 40vw;
+    order: 1;
+}
+
+.Send {
+    padding: 0 2%;
+    font-size: large;
+    max-height: 2.5em;
+    width: 40vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px gray solid;
+    border-radius: 2px;
+    cursor: pointer;
+    order: 2;
+}
+
+.Send:hover {
+    background-color: #f2f2f2;
+}

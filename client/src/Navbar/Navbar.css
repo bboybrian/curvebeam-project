@@ -1,0 +1,35 @@
+#Navbar {
+    position: fixed;
+    display: flex;
+    color: #dfdfdf;
+}
+
+#Navbar>* {
+	width: 3em;
+    height: 3em;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2e2e2e;
+    cursor: pointer;
+}
+
+#Navbar>*:not(.activePage)>*:hover {
+    scale: 0.7;
+    rotate: -5deg;
+}
+
+#Navbar>*:last-child {
+    width: 3em;
+    height: 3em;
+    background-color: #2e2e2e;
+    clip-path: polygon(0% 0%, 0% 100%, 50% 0%);
+    cursor: default;
+}
+
+.activePage>* {
+    filter: invert(80%) sepia(100%) saturate(2) hue-rotate(60deg);
+	scale: 0.75;
+    /* filter: sepia(50%); */
+}

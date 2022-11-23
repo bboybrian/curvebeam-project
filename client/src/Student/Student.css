@@ -1,0 +1,22 @@
+.highlight {
+    color: red;
+}
+
+.left_true {
+    text-decoration: line-through;
+    color: #A6A6A6;
+    font-weight: 100;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.clickable:hover {
+    background-color: #fff6dc;
+}
+
+.multi {
+    font-style: italic;
+    color: #555555;
+}
