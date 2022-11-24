@@ -1,7 +1,6 @@
 # Classroom Attendance Tracker
 
-https://curvebeam-project.vercel.app/
-Deployed on Vercel (frontend) & Google Cloud (backend).
+https://curvebeam-project.vercel.app/<br></br>Deployed on Vercel (frontend) & Google Cloud (backend).
 [Azure SQL, React, Express, Node] 
 
 Premise: Students are being picked up by car; the school needs to track who has been picked up.
